@@ -1,11 +1,40 @@
-# Project in Allure TestOps with manual & automated tests
-<a target="_blank" href="https://allure.autotests.cloud/project/%s">allure.autotests.cloud/project/%s</a> (ask admin@qa.guru for access)
+# Проект по автоматизации тестирования для сайтов:
 
-# Jenkins job
-<a target="_blank" href="https://jenkins.autotests.cloud/job/%s">jenkins.autotests.cloud/job/%s</a>
+### UI - <a target="_blank" href="https://www.huddle.team/">https://www.huddle.team</a>
+### API - <a target="_blank" href="https://reqres.in/">https://reqres.in</a>
+____
+## :pushpin: Используемые технологии и инструменты
+![Java](https://github.com/vapolonov/vapolonov/blob/main/vasvap_java_logo.png "Java")&nbsp;&nbsp;
+![IntelliJ IDEA](https://github.com/vapolonov/vapolonov/blob/main/vasvap_idea_logo.png "IntelliJ IDEA")&nbsp;&nbsp;
+![SelenideJ IDEA](https://github.com/vapolonov/vapolonov/blob/main/vasvap_selenide_logo.png "Selenide")&nbsp;&nbsp;
+![Gradle](https://github.com/vapolonov/vapolonov/blob/main/vasvap_gradle_logo.png "Gradle")&nbsp;&nbsp;
+![JUnit5](https://github.com/vapolonov/vapolonov/blob/main/vasvap_junit5_logo.png "JUnit5")&nbsp;&nbsp;
+![Allure Reports](https://github.com/vapolonov/vapolonov/blob/main/vasvap_allure_logo.png "Allure Reports")&nbsp;&nbsp;
+![GitHub](https://github.com/vapolonov/vapolonov/blob/main/vasvap_github_logo.png "GitHub")&nbsp;&nbsp;
+![Jenkins](https://github.com/vapolonov/vapolonov/blob/main/vasvap_jenkins_logo.png "Jenkins")&nbsp;&nbsp;
+![Selenoid](https://github.com/vapolonov/vapolonov/blob/main/vasvap_selenoid_logo.png "Selenoid")&nbsp;&nbsp;
+![Jira](https://github.com/vapolonov/vapolonov/blob/main/vasvap_jira_logo.png "Jira")&nbsp;&nbsp;
+![Telegram](https://github.com/vapolonov/vapolonov/blob/main/vasvap_telegram_logo.png "Telegram")&nbsp;&nbsp;
+____
+> В данном проекте автотесты написаны на Java с использованием фреймворка Selenide для UI-тестов и REST-Assured для API-тестов.
+>
+> Для сборки проекта используется Gradle.
+>
+> JUnit 5 используется как фреймворк для модульного тестирования.
+>
+> Запуск тестов выполняется из Jenkins.
+>
+> Selenoid используется для запуска браузеров в контейнерах Docker.
+>
+> Allure Report, Allure TestOps, Jira, Telegram Bot используются для визуализации результатов тестирования.
 
-
-# USAGE examples
+## 🚀 Реализованы следующие проверки
+> Проверка заголовка главной страницы сайта
+> Лог консоли браузера на главной странице сайта не содержит ошибок
+> Успешная авторизация на сайте
+> Попытка авторизации на сайте без указания пароля
+> Попытка авторизации на сайте без указания логина и пароля
+> Переход на страницу 'Восстановление пароля'
 
 ### For run remote tests need fill remote.properties or to pass value:
 
