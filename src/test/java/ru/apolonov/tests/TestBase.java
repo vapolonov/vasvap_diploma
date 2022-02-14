@@ -1,5 +1,6 @@
 package ru.apolonov.tests;
 
+
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.junit5.AllureJunit5;
@@ -11,7 +12,6 @@ import ru.apolonov.config.Project;
 import ru.apolonov.helpers.AllureAttachments;
 import ru.apolonov.helpers.DriverSettings;
 import ru.apolonov.helpers.DriverUtils;
-
 
 @ExtendWith({AllureJunit5.class})
 public class TestBase {
