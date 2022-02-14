@@ -8,10 +8,9 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.extension.ExtendWith;
-import ru.apolonov.config.Project;
 import ru.apolonov.helpers.AllureAttachments;
 import ru.apolonov.helpers.DriverSettings;
-import ru.apolonov.helpers.DriverUtils;
+
 
 @ExtendWith({AllureJunit5.class})
 public class TestBase {
@@ -23,16 +22,11 @@ public class TestBase {
 
     @AfterEach
     public void addAttachments() {
-        String sessionId = DriverUtils.getSessionId();
-
-        AllureAttachments.addScreenshotAs("Last screenshot");
-        AllureAttachments.addPageSource();
-        AllureAttachments.addBrowserConsoleLogs();
+        AllureAttachments.screenshotAs("Last screenshot");
+        AllureAttachments.pageSource();
+        AllureAttachments.browserConsoleLogs();
+        AllureAttachments.addVideo();
 
         Selenide.closeWebDriver();
-
-        if (Project.isVideoOn()) {
-            AllureAttachments.addVideo(sessionId);
-        }
     }
 }
