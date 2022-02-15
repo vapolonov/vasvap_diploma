@@ -16,17 +16,17 @@ ____
 ![Jira](https://github.com/vapolonov/vapolonov/blob/main/vasvap_jira_logo.png "Jira")&nbsp;&nbsp;
 ![Telegram](https://github.com/vapolonov/vapolonov/blob/main/vasvap_telegram_logo.png "Telegram")&nbsp;&nbsp;
 ____
-> В данном проекте автотесты написаны на Java с использованием фреймворка Selenide для UI-тестов и REST-Assured для API-тестов.
+> В данном проекте автотесты написаны на ***`Java`*** с использованием фреймворка ***`Selenide`*** для UI-тестов и ***`REST-Assured`*** для API-тестов.
 >
-> Для сборки проекта используется Gradle.
+> Для сборки проекта используется ***`Gradle`***.
 >
-> JUnit 5 используется как фреймворк для модульного тестирования.
+> ***`JUnit 5`*** используется как фреймворк для модульного тестирования.
 >
-> Запуск тестов выполняется из Jenkins.
+> Запуск тестов выполняется из ***`Jenkins`***.
 >
-> Selenoid используется для запуска браузеров в контейнерах Docker.
+> ***`Selenoid`*** используется для запуска браузеров в контейнерах ***`Docker`***.
 >
-> Allure Report, Allure TestOps, Jira, Telegram Bot используются для визуализации результатов тестирования.
+> ***`Allure Report`***, ***`Allure TestOps`***, ***`Jira`***, ***`Telegram Bot`*** используются для визуализации результатов тестирования.
 
 ## :rocket: Реализованы следующие проверки
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UI
