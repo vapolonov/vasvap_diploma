@@ -23,7 +23,7 @@ public class LoginHuddleTeamTests extends TestBase {
     @Description("Successful Login")
     @DisplayName("Successful Login")
     void successLoginTest() {
-        step("FullFill authorization form", () -> {
+        step("Complete authorization form", () -> {
 
             step("Open page https://www.huddle.team/login", () -> open("/login"));
 
@@ -46,7 +46,7 @@ public class LoginHuddleTeamTests extends TestBase {
     @Description("Login without password")
     @DisplayName("Login without password")
     void loginWithoutPasswordTest() {
-        step("FullFill authorization form without password", () -> {
+        step("Complete authorization form without password", () -> {
 
             step("Open page https://www.huddle.team/login", () -> open("/login"));
 
@@ -66,7 +66,7 @@ public class LoginHuddleTeamTests extends TestBase {
     @Description("Login without email and password")
     @DisplayName("Login without email and password")
     void loginWithoutLoginTest() {
-        step("FullFill authorization form without email", () -> {
+        step("Complete authorization form without email", () -> {
 
             step("Open page https://www.huddle.team/login", () -> open("/login"));
             step("Press Submit", () -> $("#loginformsubmit").click());
@@ -86,5 +86,21 @@ public class LoginHuddleTeamTests extends TestBase {
             step("Check error password label color", () ->
                     $("#parsley-id-7").shouldHave(cssValue("color", "rgba(242, 66, 53, 1)")));
         });
+    }
+
+    @Test
+    @Description("Check password recovery")
+    @DisplayName("Check password recovery")
+    void passwordRecoveryTests() {
+        step("Complete forgot password form", () -> {
+
+            step("Open page https://www.huddle.team/login", () -> open("/login"));
+            step("Click on 'Forgot your password?' link", () ->
+                    $("#forgot-pass-section").click());
+            step("Enter email", () -> $("#forgot_password_email").setValue(HuddleApp.config.userLogin()));
+            step("Press Submit", () -> $("a#loginformsubmit").click());
+        });
+
+        step("Check popup window about sending email", () -> $(".alert-success").shouldHave(text("Credentials email sent")));
     }
 }
