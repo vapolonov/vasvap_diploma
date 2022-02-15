@@ -42,6 +42,20 @@ ____
 > 
 > :heavy_check_mark: Переход на страницу 'Восстановление пароля'
 
+## :computer: Запуск тестов из терминала
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :arrow_down: Запуск тестов с заполненным remote.properties:
+
+```bash
+gradle clean test
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :arrow_down: Запуск тестов без заполненного remote.properties:
+
+```bash
+gradle clean -DremoteDriverUrl=https://user1:1234@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
+```
+
 ### For run remote tests need fill remote.properties or to pass value:
 
 * browser (default chrome)
@@ -51,17 +65,6 @@ ____
 * remoteDriverUrl (url address from selenoid or grid)
 * videoStorage (url address where you should get video)
 * threads (number of threads)
-
-
-Run tests with filled remote.properties:
-```bash
-gradle clean test
-```
-
-Run tests with not filled remote.properties:
-```bash
-gradle clean -DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
-```
 
 Serve report:
 ```bash
