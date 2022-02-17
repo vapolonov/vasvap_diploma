@@ -1,4 +1,4 @@
-package ru.apolonov.tests;
+package ru.apolonov.tests.ui;
 
 import com.codeborne.selenide.Configuration;
 import io.qameta.allure.Description;
@@ -7,6 +7,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import ru.apolonov.config.huddleteam.HuddleApp;
 import ru.apolonov.helpers.DriverUtils;
+import ru.apolonov.tests.TestBase;
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Selenide.*;

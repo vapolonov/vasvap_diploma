@@ -1,4 +1,4 @@
-package ru.apolonov.specs;
+package ru.apolonov.tests.api.specs;
 
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.LogDetail;
