@@ -16,7 +16,7 @@ ____
 ![Jira](https://github.com/vapolonov/vapolonov/blob/main/vasvap_jira_logo.png "Jira")&nbsp;&nbsp;
 ![Telegram](https://github.com/vapolonov/vapolonov/blob/main/vasvap_telegram_logo.png "Telegram")&nbsp;&nbsp;
 ____
-> В данном проекте автотесты написаны на ***`Java`*** с использованием фреймворка ***`Selenide`*** для UI-тестов и ***`REST-Assured`*** для API-тестов.
+> Автотесты написаны на ***`Java`*** с использованием фреймворка ***`Selenide`*** для UI-тестов и ***`REST-Assured`*** для API-тестов.
 >
 > Для сборки проекта используется ***`Gradle`***.
 >
@@ -41,6 +41,20 @@ ____
 > :heavy_check_mark: Попытка авторизации на сайте без указания логина и пароля
 > 
 > :heavy_check_mark: Переход на страницу 'Восстановление пароля'
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; API
+> :heavy_check_mark: Регистрация пользователя с корректными данными
+> 
+> :heavy_check_mark: Проверка регистрации пользователя с некорректными данными
+> 
+> :heavy_check_mark: Создание нового пользователя
+> 
+> :heavy_check_mark: Получение данных существующего пользователя
+> 
+> :heavy_check_mark: Изменение данных пользователя
+> 
+> :heavy_check_mark: Удаление пользователя
+
 
 ## :computer: Запуск тестов из терминала
 
