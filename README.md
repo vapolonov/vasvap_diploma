@@ -82,7 +82,6 @@ allure serve build/allure-results
 
 ## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_jenkins_logo.png)&nbsp; Запуск тестов в Jenkins
 
-
 ### :pushpin: Параметры сборки
 ```REPOSITORY (адрес исходников проекта на github.com)
 BROWSER (браузер, по умолчанию chrome)
@@ -93,3 +92,17 @@ TREADS (количество потоков, по умолчанию 5)
 ALLURE_NOTIFICATIONS_VERSION (версия сервиса для отправки уведомлений в телеграм, по умолчанию 3.1.1)
 ```
 ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_jenkins_param.png)
+
+После завершения сборки для просмотра результатов необходимо напротив нужной сборки кликнуть на значок ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_allure_logo.png) Allure Report
+
+![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_allure_report_2.jpg)
+
+## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_allure_logo.png) Просмотр отчета о результатах прохождения тестов в [Allure Report](https://jenkins.autotests.cloud/job/vasvap-diploma/41/allure/)
+
+### :pushpin: Общая информация
+
+![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_allure_report_3.jpg)
+
+### :pushpin: Список тестов c описанием шагов и визуализацией результатов
+
+![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_allure_report_5.jpg)
