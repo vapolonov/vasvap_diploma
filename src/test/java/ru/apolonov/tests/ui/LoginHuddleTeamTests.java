@@ -97,7 +97,8 @@ public class LoginHuddleTeamTests extends TestBase {
 
             step("Open page https://www.huddle.team/login", () -> open("/login"));
             step("Click on 'Forgot your password?' link", () ->
-                    $("#forgot-pass-section").click());
+                    //$("#forgot-pass-section").click());
+                    $x("//div[@id='forgot-pass-section']//a[@title='Forgot your password?']")).click();
             step("Enter email", () -> $("#forgot_password_email").setValue(HuddleApp.config.userLogin()));
             step("Press Submit", () -> $("a#loginformsubmit").click());
         });
