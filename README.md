@@ -80,7 +80,8 @@ gradle clean test -Dthreads=5
 allure serve build/allure-results
 ```
 
-![](https://raw.githubusercontent.com/vapolonov/vasvap_diploma/4fff0edffde620a62aaaed851eca046d882a9014/img/vasvap_jenkins-logo.svg) ## Запуск тестов в Jenkins
+## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_jenkins_logo.png)&nbsp; Запуск тестов в Jenkins
+
 
 ### :pushpin: Параметры сборки
 ```REPOSITORY (адрес исходников проекта на github.com)
@@ -90,3 +91,5 @@ BROWSER_SIZE (размер окна браузера, по умолчанию 19
 REMOTE_DRIVER_URL (url-адрес selenoid, по умолчанию selenoid.autotests.cloud)
 TREADS (количество потоков, по умолчанию 5)
 ALLURE_NOTIFICATIONS_VERSION (версия сервиса для отправки уведомлений в телеграм, по умолчанию 3.1.1)
+```
+![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_jenkins_param.png)
