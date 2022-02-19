@@ -4,18 +4,19 @@
 ### API - <a target="_blank" href="https://reqres.in/">https://reqres.in</a>
 ____
 ## :pushpin: Используемые технологии и инструменты
-![Java](https://github.com/vapolonov/vapolonov/blob/main/vasvap_java_logo.png "Java")&nbsp;&nbsp;
-![IntelliJ IDEA](https://github.com/vapolonov/vapolonov/blob/main/vasvap_idea_logo.png "IntelliJ IDEA")&nbsp;&nbsp;
-![SelenideJ IDEA](https://github.com/vapolonov/vapolonov/blob/main/vasvap_selenide_logo.png "Selenide")&nbsp;&nbsp;
-![Gradle](https://github.com/vapolonov/vapolonov/blob/main/vasvap_gradle_logo.png "Gradle")&nbsp;&nbsp;
-![JUnit5](https://github.com/vapolonov/vapolonov/blob/main/vasvap_junit5_logo.png "JUnit5")&nbsp;&nbsp;
-![Allure Reports](https://github.com/vapolonov/vapolonov/blob/main/vasvap_allure_logo.png "Allure Reports")&nbsp;&nbsp;
-![Allure TestOps](https://github.com/vapolonov/vapolonov/blob/main/vasvap_allure_logo_l.png "Allure TestOps")&nbsp;&nbsp;
-![GitHub](https://github.com/vapolonov/vapolonov/blob/main/vasvap_github_logo.png "GitHub")&nbsp;&nbsp;
-![Jenkins](https://github.com/vapolonov/vapolonov/blob/main/vasvap_jenkins_logo.png "Jenkins")&nbsp;&nbsp;
-![Selenoid](https://github.com/vapolonov/vapolonov/blob/main/vasvap_selenoid_logo.png "Selenoid")&nbsp;&nbsp;
-![Jira](https://github.com/vapolonov/vapolonov/blob/main/vasvap_jira_logo.png "Jira")&nbsp;&nbsp;
-![Telegram](https://github.com/vapolonov/vapolonov/blob/main/vasvap_telegram_logo.png "Telegram")&nbsp;&nbsp;
+![Java](https://github.com/vapolonov/vapolonov/blob/main/vasvap_java_logo.png "Java")&nbsp;
+![IntelliJ IDEA](https://github.com/vapolonov/vapolonov/blob/main/vasvap_idea_logo.png "IntelliJ IDEA")&nbsp;
+![SelenideJ IDEA](https://github.com/vapolonov/vapolonov/blob/main/vasvap_selenide_logo.png "Selenide")&nbsp;
+![Gradle](https://github.com/vapolonov/vapolonov/blob/main/vasvap_gradle_logo.png "Gradle")&nbsp;
+![JUnit5](https://github.com/vapolonov/vapolonov/blob/main/vasvap_junit5_logo.png "JUnit5")&nbsp;
+![REST Assured](https://github.com/vapolonov/vapolonov/blob/main/vasvap_rest-assured_logo.png "REST Assured")&nbsp;
+![Allure Reports](https://github.com/vapolonov/vapolonov/blob/main/vasvap_allure_logo.png "Allure Reports")&nbsp;
+![Allure TestOps](https://github.com/vapolonov/vapolonov/blob/main/vasvap_allure_logo_l.png "Allure TestOps")&nbsp;
+![GitHub](https://github.com/vapolonov/vapolonov/blob/main/vasvap_github_logo.png "GitHub")&nbsp;
+![Jenkins](https://github.com/vapolonov/vapolonov/blob/main/vasvap_jenkins_logo.png "Jenkins")&nbsp;
+![Selenoid](https://github.com/vapolonov/vapolonov/blob/main/vasvap_selenoid_logo.png "Selenoid")&nbsp;
+![Jira](https://github.com/vapolonov/vapolonov/blob/main/vasvap_jira_logo.png "Jira")&nbsp;
+![Telegram](https://github.com/vapolonov/vapolonov/blob/main/vasvap_telegram_logo.png "Telegram")&nbsp;
 ____
 > Автотесты написаны на ***`Java`*** с использованием фреймворка ***`Selenide`*** для UI-тестов и ***`REST-Assured`*** для API-тестов.
 >
