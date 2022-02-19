@@ -80,7 +80,7 @@ gradle clean test -Dthreads=5
 allure serve build/allure-results
 ```
 
-## :computer: Запуск тестов в Jenkins
+![](https://raw.githubusercontent.com/vapolonov/vasvap_diploma/4fff0edffde620a62aaaed851eca046d882a9014/img/vasvap_jenkins-logo.svg) ## Запуск тестов в Jenkins
 
 ### :pushpin: Параметры сборки
 ```REPOSITORY (адрес исходников проекта на github.com)
