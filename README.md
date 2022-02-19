@@ -131,8 +131,8 @@ ALLURE_NOTIFICATIONS_VERSION (версия сервиса для отправк�
 
 ## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_telegram_logo.png) Уведомления о прохождении тестов в Телеграм
 
-![]()
-![]()
+![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_telegram_1.jpg)
+![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_telegram_2.jpg)
 
 :heart: <a target="_blank" href="https://t.me/vasiliy_apolonov">@vasiliy_apolonov</a>
 
