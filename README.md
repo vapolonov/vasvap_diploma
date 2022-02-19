@@ -56,7 +56,6 @@ ____
 > 
 > :heavy_check_mark: Удаление пользователя
 
-
 ## :computer: Запуск тестов из терминала
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :arrow_down: Запуск тестов с заполненным remote.properties:
@@ -108,7 +107,9 @@ ALLURE_NOTIFICATIONS_VERSION (версия сервиса для отправк�
 
 ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_allure_report_5.jpg)
 
-### ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_selenoid_logo_s.png)&nbsp; Демонстрация прохождения теста в Selenoid
+### ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_selenoid_logo_sm.png)&nbsp; Демонстрация прохождения теста в Selenoid
+
+![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/selenoid.gif)
 
 ## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_allure_logo.png) Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/1032/dashboards)
 
@@ -127,4 +128,11 @@ ALLURE_NOTIFICATIONS_VERSION (версия сервиса для отправк�
 ## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_jira_logo.png) Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-342)
 
 ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_jira.jpg)
+
+## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_telegram_logo.png) Уведомления о прохождении тестов в Телеграм
+
+![]()
+![]()
+
+:heart: <a target="_blank" href="https://t.me/vasiliy_apolonov">@vasiliy_apolonov</a>
 
