@@ -10,6 +10,7 @@ ____
 ![Gradle](https://github.com/vapolonov/vapolonov/blob/main/vasvap_gradle_logo.png "Gradle")&nbsp;&nbsp;
 ![JUnit5](https://github.com/vapolonov/vapolonov/blob/main/vasvap_junit5_logo.png "JUnit5")&nbsp;&nbsp;
 ![Allure Reports](https://github.com/vapolonov/vapolonov/blob/main/vasvap_allure_logo.png "Allure Reports")&nbsp;&nbsp;
+![Allure TestOps](https://github.com/vapolonov/vapolonov/blob/main/vasvap_allure_logo_l.png "Allure TestOps")&nbsp;&nbsp;
 ![GitHub](https://github.com/vapolonov/vapolonov/blob/main/vasvap_github_logo.png "GitHub")&nbsp;&nbsp;
 ![Jenkins](https://github.com/vapolonov/vapolonov/blob/main/vasvap_jenkins_logo.png "Jenkins")&nbsp;&nbsp;
 ![Selenoid](https://github.com/vapolonov/vapolonov/blob/main/vasvap_selenoid_logo.png "Selenoid")&nbsp;&nbsp;
@@ -89,15 +90,15 @@ BROWSER_VERSION (версия браузера, по умолчанию 91.0)
 BROWSER_SIZE (размер окна браузера, по умолчанию 1920x1080)
 REMOTE_DRIVER_URL (url-адрес selenoid, по умолчанию selenoid.autotests.cloud)
 TREADS (количество потоков, по умолчанию 5)
-ALLURE_NOTIFICATIONS_VERSION (версия сервиса для отправки уведомлений в телеграм, по умолчанию 3.1.1)
+ALLURE_NOTIFICATIONS_VERSION (версия сервиса для отправки уведомлений в телеграм, по умолчанию 2.2.3)
 ```
 ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_jenkins_param.png)
 
-После завершения сборки для просмотра результатов необходимо напротив нужной сборки кликнуть на значок ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_allure_logo.png) Allure Report
+После завершения сборки для просмотра результатов необходимо напротив нужной сборки кликнуть на значок ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_testops_logo.png) Allure Report
 
 ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_allure_report_2.jpg)
 
-## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_allure_logo.png) Просмотр отчета о результатах прохождения тестов в [Allure Report](https://jenkins.autotests.cloud/job/vasvap-diploma/41/allure/)
+## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_testops_logo.png) Просмотр отчета о результатах прохождения тестов в [Allure Report](https://jenkins.autotests.cloud/job/vasvap-diploma/41/allure/)
 
 ### :pushpin: Общая информация
 
@@ -107,7 +108,9 @@ ALLURE_NOTIFICATIONS_VERSION (версия сервиса для отправк�
 
 ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_allure_report_5.jpg)
 
-## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_testops_logo.png) Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/1032/dashboards)
+### ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_selenoid_logo_s.png)&nbsp; Демонстрация прохождения теста в Selenoid
+
+## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_allure_logo.png) Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/1032/dashboards)
 
 ### :pushpin: Главный дашборд
 
@@ -120,3 +123,8 @@ ALLURE_NOTIFICATIONS_VERSION (версия сервиса для отправк�
 ### :pushpin: Список тест-кейсов
 
 ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_testops_2.jpg)
+
+## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_jira_logo.png) Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-342)
+
+![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_jira.jpg)
+
