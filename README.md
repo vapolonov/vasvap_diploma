@@ -70,27 +70,23 @@ gradle clean test
 gradle clean -DremoteDriverUrl=https://user1:1234@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
 ```
 
-### For run remote tests need fill remote.properties or to pass value:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :arrow_down: Запуск тестов в несколько потоков (5):
+```bash
+gradle clean test -Dthreads=5
+```
 
-* browser (default chrome)
-* browserVersion (default 89.0)
-* browserSize (default 1920x1080)
-* browserMobileView (mobile device name, for example iPhone X)
-* remoteDriverUrl (url address from selenoid or grid)
-* videoStorage (url address where you should get video)
-* threads (number of threads)
-
-Serve report:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :arrow_down: Формирование отчета allure:
 ```bash
 allure serve build/allure-results
 ```
 
+## :computer: Запуск тестов в Jenkins
 
-###### For further development there are some example tests in src/test/java/cloud.autotests/tests/demowebshop
-* remove @Disabled("...") annotation to run tests
-```bash
-gradle clean demowebshop
-```
-
-:heart: <a target="_blank" href="https://qa.guru">qa.guru</a><br/>
-:blue_heart: <a target="_blank" href="https://t.me/qa_automation">t.me/qa_automation</a>
+### :pushpin: Параметры сборки
+```REPOSITORY (адрес исходников проекта на github.com)
+BROWSER (браузер, по умолчанию chrome)
+BROWSER_VERSION (версия браузера, по умолчанию 91.0)
+BROWSER_SIZE (размер окна браузера, по умолчанию 1920x1080)
+REMOTE_DRIVER_URL (url-адрес selenoid, по умолчанию selenoid.autotests.cloud)
+TREADS (количество потоков, по умолчанию 5)
+ALLURE_NOTIFICATIONS_VERSION (версия сервиса для отправки уведомлений в телеграм, по умолчанию 3.1.1)
