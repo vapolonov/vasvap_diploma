@@ -1,7 +1,7 @@
-package ru.apolonov.lombok;
+package ru.apolonov.models;
 
-import io.qameta.allure.internal.shadowed.jackson.annotation.JsonIgnoreProperties;
-import io.qameta.allure.internal.shadowed.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
@@ -13,5 +13,4 @@ public class User {
     private String firstName;
     @JsonProperty("last_name")
     private String lastName;
-    private String text;
 }

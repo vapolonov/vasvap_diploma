@@ -1,8 +1,9 @@
 package ru.apolonov.tests.api;
 
+import io.qameta.allure.Description;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import ru.apolonov.lombok.*;
+import ru.apolonov.models.*;
 
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
@@ -14,6 +15,7 @@ import static ru.apolonov.tests.api.specs.Specs.*;
 public class ApiReqresInTests {
 
     @Test
+    @Description("Register with correct user data")
     @DisplayName("Register successful reqres.in")
     void registerSuccessfulTest() {
         RegisterUser registrationData = new RegisterUser();
@@ -34,6 +36,7 @@ public class ApiReqresInTests {
     }
 
     @Test
+    @Description("Login with incorrect user data")
     @DisplayName("Negative login reqres.in")
     void negativeLoginTest() {
         RegisterUser registrationData = new RegisterUser();
@@ -53,11 +56,13 @@ public class ApiReqresInTests {
     }
 
     @Test
+    @Description("Create new user")
     @DisplayName("Create user reqres.in")
     void createUserTest() {
         CreateUserRequest newCreateUser = new CreateUserRequest("John Snow", "Targarien");
 
-        CreateUserResponse response = given().spec(specRequest)
+        CreateUserResponse response = given()
+                .spec(specRequest)
                 .body(newCreateUser)
                 .when()
                 .post("/api/users")
@@ -73,6 +78,7 @@ public class ApiReqresInTests {
     }
 
     @Test
+    @Description("Get single user data")
     @DisplayName("Get single user data reqres.in")
     void singleUserTest() {
 
@@ -87,5 +93,38 @@ public class ApiReqresInTests {
         assertEquals("Janet", data.getUser().getFirstName());
         assertEquals("janet.weaver@reqres.in", data.getUser().getEmail());
         assertThat(data.getUser().getLastName()).isEqualTo("Weaver");
+    }
+
+    @Test
+    @Description("Update existing user")
+    @DisplayName("Update user reqres.in")
+    void updateUser() {
+        UpdateUserRequest newUpdateUser = new UpdateUserRequest("morpheus", "zion resident");
+
+        UpdateUserResponse response = given()
+                .spec(specRequest)
+                .body(newUpdateUser)
+                .when()
+                .patch("/api/users/2")
+                .then()
+                .spec(specResponse200)
+                .extract().as(UpdateUserResponse.class);
+
+        assertThat(response.getName()).isEqualTo("morpheus");
+        assertThat(response.getJob()).isEqualTo("zion resident");
+        assertFalse(response.getUpdatedAt().isEmpty());
+    }
+
+    @Test
+    @Description("Delete user")
+    @DisplayName("Delete user reqres.in")
+    void deleteUser() {
+        given()
+                .spec(specRequest)
+                .when()
+                .delete("/api/users/2")
+                .then()
+                .log().all()
+                .statusCode(204);
     }
 }

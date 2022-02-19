@@ -11,7 +11,7 @@ import static ru.apolonov.helpers.CustomLogFilter.customLogFilter;
 
 public class Specs {
     public static RequestSpecification specRequest = with()
-            .baseUri("https://reqres.in/")
+            .baseUri("https://reqres.in")
             .filter(customLogFilter().withCustomTemplates())
             .log().all()
             .contentType(JSON);

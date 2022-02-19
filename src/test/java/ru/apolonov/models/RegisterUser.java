@@ -1,6 +1,6 @@
-package ru.apolonov.lombok;
+package ru.apolonov.models;
 
-import io.qameta.allure.internal.shadowed.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
 @Data
