@@ -80,7 +80,7 @@ gradle clean test -Dthreads=5
 allure serve build/allure-results
 ```
 
-## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_jenkins_logo.png)&nbsp; Запуск тестов в Jenkins
+## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_jenkins_logo.png)&nbsp; Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/vasvap-diploma/)
 
 ### :pushpin: Параметры сборки
 ```REPOSITORY (адрес исходников проекта на github.com)
@@ -106,3 +106,5 @@ ALLURE_NOTIFICATIONS_VERSION (версия сервиса для отправк�
 ### :pushpin: Список тестов c описанием шагов и визуализацией результатов
 
 ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_allure_report_5.jpg)
+
+## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_testops_logo.png) Интеграция с [Allure TestOps](https://jenkins.autotests.cloud/job/vasvap-diploma/41/allure/)
