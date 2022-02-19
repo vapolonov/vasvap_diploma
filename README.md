@@ -107,4 +107,16 @@ ALLURE_NOTIFICATIONS_VERSION (версия сервиса для отправк�
 
 ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_allure_report_5.jpg)
 
-## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_testops_logo.png) Интеграция с [Allure TestOps](https://jenkins.autotests.cloud/job/vasvap-diploma/41/allure/)
+## ![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_testops_logo.png) Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/1032/dashboards)
+
+### :pushpin: Главный дашборд
+
+![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_testops.jpg)
+
+### :pushpin: Запуски прогонов тестов
+
+![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_testops_3.jpg)
+
+### :pushpin: Список тест-кейсов
+
+![](https://github.com/vapolonov/vasvap_diploma/blob/main/img/vasvap_testops_2.jpg)
