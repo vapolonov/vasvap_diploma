@@ -22,8 +22,8 @@ public class LoginHuddleTeamTests extends TestBase {
     }
 
     @Test
-    @Description("Successful Login")
     @DisplayName("Successful Login")
+    @Description("Successful Login with correct parameters")
     void successLoginTest() {
         step("Complete authorization form", () -> {
             step("Open page https://www.huddle.team/login", () -> open("/login"));
@@ -31,22 +31,19 @@ public class LoginHuddleTeamTests extends TestBase {
             step("Enter password", () -> $("#password").setValue(HuddleApp.config.userPassword()));
             step("Press Submit", () -> $("#loginformsubmit").click());
         });
-
         step("Check successful login", () -> {
             step("Check name Account Administrator", () ->
-                    //$x("//div[@class='column-line clearfix']//span[@class='credentials-value pull-right']//*[text()='Vasiliy Apolonov']")
-                    //       .shouldHave(text("Vasiliy Apolonov")));
-                    $("div.column-line.clearfix span.credentials-value.pull-right").find(byText("Vasiliy Apolonov")).shouldBe(visible));
+                    $("div.column-line.clearfix span.credentials-value.pull-right")
+                            .find(byText("Vasiliy Apolonov")).shouldBe(visible));
             step("Check email Account Administrator", () ->
-                    // $x("//div[@class='column-line clearfix']//span[@class='credentials-value pull-right small']//a[text()='vasvap@gmail.com']")
-                    //         .shouldHave(text(HuddleApp.config.userLogin())));
-                    $("div.column-line.clearfix span.credentials-value.pull-right.small").find(byText("vasvap@gmail.com")).shouldBe(visible));
+                    $("div.column-line.clearfix span.credentials-value.pull-right.small")
+                            .find(byText("vasvap@gmail.com")).shouldBe(visible));
         });
     }
 
     @Test
-    @Description("Login without password")
-    @DisplayName("Login without password")
+    @DisplayName("Unsuccessful login")
+    @Description("Unsuccessful login without password")
     void loginWithoutPasswordTest() {
         step("Complete authorization form without password", () -> {
 
@@ -65,8 +62,8 @@ public class LoginHuddleTeamTests extends TestBase {
     }
 
     @Test
-    @Description("Login without email and password")
-    @DisplayName("Login without email and password")
+    @DisplayName("Unsuccessful login")
+    @Description("Unsuccessful login without email and password")
     void loginWithoutLoginTest() {
         step("Complete authorization form without email", () -> {
 
@@ -93,16 +90,12 @@ public class LoginHuddleTeamTests extends TestBase {
     }
 
     @Test
+    @DisplayName("Password recovery")
     @Description("Check password recovery")
-    @DisplayName("Check password recovery")
     void passwordRecoveryTests() {
         step("Complete forgot password form", () -> {
-
             step("Open page https://www.huddle.team/login", () -> open("/login"));
             step("Click on 'Forgot your password?' link", () ->
-                    //$("#forgot-pass-section").click());
-                    //$x("//div[@id='forgot-pass-section']//a[@title='Forgot your password?']")).click();
-                    //$("#forgot-pass-section").$("[title=Forgot your password?]").click());
                     $(byAttribute("title", "Forgot your password?")).click());
             step("Enter email", () ->
                     $("#forgot_password_email").setValue(HuddleApp.config.userLogin()));
