@@ -8,8 +8,9 @@ import org.junit.jupiter.api.Test;
 import ru.apolonov.config.huddleteam.HuddleApp;
 import ru.apolonov.tests.TestBase;
 
-import static com.codeborne.selenide.Condition.cssValue;
-import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Selectors.byAttribute;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
@@ -25,9 +26,7 @@ public class LoginHuddleTeamTests extends TestBase {
     @DisplayName("Successful Login")
     void successLoginTest() {
         step("Complete authorization form", () -> {
-
             step("Open page https://www.huddle.team/login", () -> open("/login"));
-
             step("Enter email", () -> $("#login_email").setValue(HuddleApp.config.userLogin()));
             step("Enter password", () -> $("#password").setValue(HuddleApp.config.userPassword()));
             step("Press Submit", () -> $("#loginformsubmit").click());
@@ -35,11 +34,13 @@ public class LoginHuddleTeamTests extends TestBase {
 
         step("Check successful login", () -> {
             step("Check name Account Administrator", () ->
-                    $x("//div[@class='column-line clearfix']//span[@class='credentials-value pull-right']//*[text()='Vasiliy Apolonov']")
-                            .shouldHave(text("Vasiliy Apolonov")));
+                    //$x("//div[@class='column-line clearfix']//span[@class='credentials-value pull-right']//*[text()='Vasiliy Apolonov']")
+                     //       .shouldHave(text("Vasiliy Apolonov")));
+                    $("div.column-line.clearfix span.credentials-value.pull-right").find(byText("Vasiliy Apolonov")).shouldBe(visible));
             step("Check email Account Administrator", () ->
-                    $x("//div[@class='column-line clearfix']//span[@class='credentials-value pull-right small']//a[text()='vasvap@gmail.com']")
-                            .shouldHave(text(HuddleApp.config.userLogin())));
+                   // $x("//div[@class='column-line clearfix']//span[@class='credentials-value pull-right small']//a[text()='vasvap@gmail.com']")
+                   //         .shouldHave(text(HuddleApp.config.userLogin())));
+            $("div.column-line.clearfix span.credentials-value.pull-right.small").find(byText("vasvap@gmail.com")).shouldBe(visible));
         });
     }
 
@@ -69,8 +70,10 @@ public class LoginHuddleTeamTests extends TestBase {
     void loginWithoutLoginTest() {
         step("Complete authorization form without email", () -> {
 
-            step("Open page https://www.huddle.team/login", () -> open("/login"));
-            step("Press Submit", () -> $("#loginformsubmit").click());
+            step("Open page https://www.huddle.team/login", () ->
+                    open("/login"));
+            step("Press Submit", () ->
+                    $("#loginformsubmit").click());
         });
 
         step("Check unsuccessful login", () -> {
@@ -98,9 +101,13 @@ public class LoginHuddleTeamTests extends TestBase {
             step("Open page https://www.huddle.team/login", () -> open("/login"));
             step("Click on 'Forgot your password?' link", () ->
                     //$("#forgot-pass-section").click());
-                    $x("//div[@id='forgot-pass-section']//a[@title='Forgot your password?']")).click();
-            step("Enter email", () -> $("#forgot_password_email").setValue(HuddleApp.config.userLogin()));
-            step("Press Submit", () -> $("a#loginformsubmit").click());
+                    //$x("//div[@id='forgot-pass-section']//a[@title='Forgot your password?']")).click();
+                    //$("#forgot-pass-section").$("[title=Forgot your password?]").click());
+                    $(byAttribute("title", "Forgot your password?")).click());
+            step("Enter email", () ->
+                    $("#forgot_password_email").setValue(HuddleApp.config.userLogin()));
+            step("Press Submit", () ->
+                    $("a#loginformsubmit").click());
         });
 
         step("Check popup window about sending email", () -> $(".alert-success").shouldHave(text("Credentials email sent")));
