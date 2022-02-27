@@ -35,12 +35,12 @@ public class LoginHuddleTeamTests extends TestBase {
         step("Check successful login", () -> {
             step("Check name Account Administrator", () ->
                     //$x("//div[@class='column-line clearfix']//span[@class='credentials-value pull-right']//*[text()='Vasiliy Apolonov']")
-                     //       .shouldHave(text("Vasiliy Apolonov")));
+                    //       .shouldHave(text("Vasiliy Apolonov")));
                     $("div.column-line.clearfix span.credentials-value.pull-right").find(byText("Vasiliy Apolonov")).shouldBe(visible));
             step("Check email Account Administrator", () ->
-                   // $x("//div[@class='column-line clearfix']//span[@class='credentials-value pull-right small']//a[text()='vasvap@gmail.com']")
-                   //         .shouldHave(text(HuddleApp.config.userLogin())));
-            $("div.column-line.clearfix span.credentials-value.pull-right.small").find(byText("vasvap@gmail.com")).shouldBe(visible));
+                    // $x("//div[@class='column-line clearfix']//span[@class='credentials-value pull-right small']//a[text()='vasvap@gmail.com']")
+                    //         .shouldHave(text(HuddleApp.config.userLogin())));
+                    $("div.column-line.clearfix span.credentials-value.pull-right.small").find(byText("vasvap@gmail.com")).shouldBe(visible));
         });
     }
 
@@ -110,6 +110,7 @@ public class LoginHuddleTeamTests extends TestBase {
                     $("a#loginformsubmit").click());
         });
 
-        step("Check popup window about sending email", () -> $(".alert-success").shouldHave(text("Credentials email sent")));
+        step("Check popup window about sending email", () ->
+                $(".alert-success").shouldHave(text("Credentials email sent")));
     }
 }
